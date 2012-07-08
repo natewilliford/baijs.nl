@@ -1,0 +1,7 @@
+.widgetDownloadsTitle { margin: 0; padding: 20px 0 0; clear: both; }
+.widgetDownloadsSelectedList { margin: 0 0 15px; }
+.widgetDownloadAddButton { float: right; }
+.widgetDownloadsSelectedList li { background-color: #dcdcdc; padding: 5px 10px 5px 5px;  }
+.widgetDownloadSelectedDeleteButton { float: right; text-decoration: none; line-height: 25px; }        
+.widgetDownloadSelectedName { width: 195px; }
+.widgetDownloadSelectedSnippet { display: none; }

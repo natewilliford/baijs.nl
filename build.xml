@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+
+<project name="baijsnl" default="dist">
+
+    <description>Baijs.nl Build</description>
+
+    <target name="-load.properties" description="Set properties for this build.">
+        <property name="yui.jar" value="lib/yuicompressor/yuicompressor-2.4.2.jar"/>
+        <property name="rhino.jar" value="lib/rhino/js.jar"/>
+        <property name="jshint.js" value="lib/jshint/jshint.js"/>
+
+        <property name="dist.dir" value="dist" />
+        <property name="src.dir" value="${dist.dir}/src" />
+
+        <property name="tinycarousel.version"     value="1.9" />
+        <property name="tinyscrollbar.version"    value="1.8" />
+        <property name="tinycircleslider.version" value="1.5" />
+    </target>
+       
+    <!-- Create build directory structure. -->
+    <target name="-init" depends="-load.properties" description="Create build directory structure.">        
+        <echo>Clean dist directory.</echo>
+        <delete dir="${dist.dir}"/>
+
+        <echo>Create build directory structure...</echo>
+        <mkdir dir="${dist.dir}"/>
+        <mkdir dir="${src.dir}"/>
+
+        <copy todir="${src.dir}/projects">
+            <fileset dir="projects" includes="**/*" />
+        </copy>
+        
+        <copy todir="${src.dir}/css">
+            <fileset dir="css" includes="**/*" />
+        </copy>
+
+        <copy todir="${src.dir}/js">
+            <fileset dir="js" includes="**/*" />
+        </copy>   
+
+        <copy todir="${src.dir}/images">
+            <fileset dir="images" includes="**/*" />
+        </copy>  
+
+        <copy todir="${src.dir}/fonts">
+            <fileset dir="fonts" includes="**/*" />
+        </copy> 
+
+         <copy file="index.html"  todir="${src.dir}" />                   
+    </target>
+
+    <!-- Set build numbers. -->
+    <target name="-set.builds" depends="-init" description="Set build numbers.">
+        <echo>Set build numbers...</echo>
+
+        <replaceregexp flags="sg">
+            <regexp pattern="@@tinyscrollbar-build-number@@" />
+            <substitution expression="${tinyscrollbar.version}" />
+
+            <fileset dir="${src.dir}">
+                <include name="index.html" />
+                <include name="projects/tinyscrollbar/index.html" />
+                <include name="projects/tinyscrollbar/js/jquery.tinyscrollbar.js" />
+            </fileset>
+        </replaceregexp>     
+
+        <replaceregexp flags="sg">
+            <regexp pattern="@@tinycarousel-build-number@@" />
+            <substitution expression="${tinycarousel.version}" />
+
+            <fileset dir="${src.dir}">
+                <include name="index.html" />
+                <include name="projects/tinycarousel/index.html" />
+                <include name="projects/tinycarousel/js/jquery.tinycarousel.js" />
+            </fileset>
+        </replaceregexp>
+
+        <replaceregexp flags="sg">
+            <regexp pattern="@@tinycircleslider-build-number@@" />
+            <substitution expression="${tinycircleslider.version}" />
+
+            <fileset dir="${src.dir}">
+                <include name="index.html" />
+                <include name="projects/tinycircleslider/index.html" />
+                <include name="projects/tinycircleslider/js/jquery.tinycircleslider.js" />
+            </fileset>
+        </replaceregexp>
+    </target>
+
+    <!-- Validate javascript files. failonerror="true -->
+    <target name="-js.lint" depends="-init" description="Validate javascript files.">
+        <echo>Validate javascript files...</echo>
+
+        <apply executable="java" parallel="false">
+            <arg value="-jar"/>
+            <arg value="${rhino.jar}"/>
+            <arg value="${jshint.js}"/>
+            <srcfile/>
+
+            <fileset dir="${src.dir}/projects" includes="**/*.js">
+                <contains text="baijs" casesensitive="no"/>
+            </fileset>
+        </apply>
+    </target>
+
+    <!-- Compress project Javascript -->
+    <target name="-js.compress" depends="-js.lint" description="Compress project Javascript.">
+        <echo>Compressing javascript files...</echo>
+
+        <apply executable="java" parallel="false" verbose="true" dest="${src.dir}/projects/">
+            <arg value="-jar"/>
+            <arg path="${yui.jar}"/>
+            <arg value="-v"/>
+            <arg value="--type"/>
+            <arg value="js"/>
+            <arg value="--charset"/>
+            <arg value="utf-8"/>
+            <srcfile/>
+            <arg value="-o"/>
+            <targetfile/>
+
+            <fileset dir="${src.dir}/projects" includes="**/*.js">
+                <contains text="baijs" casesensitive="no"/>
+            </fileset>
+
+            <mapper type="glob" from="*.js" to="*.min.js"/>
+        </apply>
+    </target>
+
+    <!-- Tar and gzip the project examples -->
+    <target name="-examples.tar" depends="-js.compress" description="Tar and gzip the project examples.">
+        <echo>Tar and gzip the project examples...</echo>
+
+        <tar    destfile="${src.dir}/projects/tinycarousel/example.tar" basedir="${src.dir}/projects/tinycarousel/example"/>
+        <gzip   destfile="${src.dir}/projects/tinycarousel/example.tar.gz"  src="${src.dir}/projects/tinycarousel/example.tar"/>
+        <delete file="${src.dir}/projects/tinycarousel/example.tar"/>
+        <delete dir="${src.dir}/projects/tinycarousel/example"/> 
+
+        <copy   file="${src.dir}/projects/tinyscrollbar/js/jquery.tinyscrollbar.min.js"  todir="${src.dir}/projects/tinyscrollbar/example/js" /> 
+        <tar    destfile="${src.dir}/projects/tinyscrollbar/example.tar" basedir="${src.dir}/projects/tinyscrollbar/example"/>
+        <gzip   destfile="${src.dir}/projects/tinyscrollbar/example.tar.gz"  src="${src.dir}/projects/tinyscrollbar/example.tar"/> 
+        <delete file="${src.dir}/projects/tinyscrollbar/example.tar"/>
+        <delete dir="${src.dir}/projects/tinyscrollbar/example"/> 
+
+        <tar    destfile="${src.dir}/projects/tinycircleslider/example.tar" basedir="${src.dir}/projects/tinycircleslider/example"/>
+        <gzip   destfile="${src.dir}/projects/tinycircleslider/example.tar.gz"  src="${src.dir}/projects/tinycircleslider/example.tar"/>
+        <delete file="${src.dir}/projects/tinycircleslider/example.tar"/>    
+        <delete dir="${src.dir}/projects/tinycircleslider/example"/>  
+    </target>
+
+    <!--Build-->
+    <target name="dist" 
+            description="Builds project files for production use"
+            depends="
+                -load.properties, 
+                -init,
+                -set.builds,
+                -js.lint,
+                -js.compress,
+                -examples.tar">
+    </target>
+
+</project>

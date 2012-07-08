@@ -1,0 +1,6 @@
+.widgetPostsTitle { margin: 10px 0 0; clear: both; }
+.widgetPostsSelectedList { margin: 0 0 15px; }
+.widgetPostAddButton { float: right; }
+.widgetPostsSelectedList li { background-color: #dcdcdc; padding: 5px 10px 5px 5px;  }
+.widgetPostSelectedDeleteButton { float: right; text-decoration: none; }        
+.widgetPostSelectedSnippet { display: none; }

@@ -1,0 +1,445 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"un",
+				"undefined"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "projects/tinycircleslider/js/jquery.tinycircleslider.js",
+			"settings":
+			{
+				"buffer_size": 12313,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "projects/tinycircleslider/css/tinycircleslider.css",
+			"settings":
+			{
+				"buffer_size": 4613,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "projects/tinyscrollbar/css/tinyscrollbar.css",
+			"settings":
+			{
+				"buffer_size": 6854,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "projects/tinyscrollbar/js/jquery.tinyscrollbar.js",
+			"settings":
+			{
+				"buffer_size": 7813,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "projects/tinyscrollbar/index.html",
+			"settings":
+			{
+				"buffer_size": 44000,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "build.xml",
+			"settings":
+			{
+				"buffer_size": 6610,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "projects/tinyscrollbar/example/index.html",
+			"settings":
+			{
+				"buffer_size": 5209,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/Java/Ant.sublime-build",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/maartenbaijs/NetBeansProjects/baijs/projects/tinyscrollbar/js/jquery.tinyscrollbar.js",
+		"/Users/maartenbaijs/NetBeansProjects/baijs/projects/tinycircleslider/js/website.js",
+		"/Users/maartenbaijs/NetBeansProjects/baijs/projects/tinycircleslider/index.html",
+		"/Users/maartenbaijs/NetBeansProjects/baijs/build.xml",
+		"/Users/maartenbaijs/NetBeansProjects/baijs/projects/tinyscrollbar/index.html",
+		"/Users/maartenbaijs/NetBeansProjects/baijs/projects/tinycarousel/index.html",
+		"/Users/maartenbaijs/NetBeansProjects/baijs/index.html",
+		"/Users/maartenbaijs/NetBeansProjects/baijs/projects/tinyscrollbar/css/tinyscrollbar.css",
+		"/Users/maartenbaijs/NetBeansProjects/baijs/.htaccess",
+		"/Users/maartenbaijs/NetBeansProjects/baijs/projects/tinycircleslider/css/tinycircleslider.css",
+		"/Users/maartenbaijs/NetBeansProjects/baijs/projects/tinycarousel/css/tinyscrollbar.css",
+		"/Users/maartenbaijs/NetBeansProjects/baijs/css/website.css",
+		"/Users/maartenbaijs/NetBeansProjects/baijs/projects/tinycircleslider/js/jquery.tinycircleslider.js",
+		"/Users/maartenbaijs/NetBeansProjects/baijs/js/website.js",
+		"/Users/maartenbaijs/NetBeansProjects/baijs/projects/tinyscrollbar/index.php",
+		"/Users/maartenbaijs/NetBeansProjects/baijs/dist/src/projects/tinyscrollbar/index.php",
+		"/Users/maartenbaijs/NetBeansProjects/baijs/projects/tinycircleslider/index.php",
+		"/Users/maartenbaijs/NetBeansProjects/baijs/projects/tinycarousel/index.php",
+		"/Users/maartenbaijs/NetBeansProjects/baijs/projects/tinycarousel/js/jquery.tinycarousel.js",
+		"/Users/maartenbaijs/NetBeansProjects/baijs/.swp",
+		"/Users/maartenbaijs/NetBeansProjects/baijs/lib/download.html",
+		"/Users/maartenbaijs/NetBeansProjects/baijs/index.php",
+		"/Users/maartenbaijs/NetBeansProjects/essTansparency/essTransparencyOnlineWidgets/build.xml",
+		"/Users/maartenbaijs/NetBeansProjects/baijs/lib/jshint/jshint.js",
+		"/Users/maartenbaijs/NetBeansProjects/baijs/lib/jslint/fulljslint.js",
+		"/Users/maartenbaijs/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/maartenbaijs/NetBeansProjects/baijs/dist/src/projects/tinycarousel/js/jquery.tinycarousel.js",
+		"/Users/maartenbaijs/NetBeansProjects/salesApp/build.xml",
+		"/Users/maartenbaijs/NetBeansProjects/agent8ball/config/compass.rb",
+		"/Users/maartenbaijs/NetBeansProjects/agent8ball/config/environments/production.rb",
+		"/Users/maartenbaijs/NetBeansProjects/agent8ball/config/application.rb",
+		"/Users/maartenbaijs/NetBeansProjects/agent8ball/Rakefile",
+		"/Users/maartenbaijs/NetBeansProjects/baijs/lib/jslint.js",
+		"/Users/maartenbaijs/NetBeansProjects/baijs/js/jquery.tinycarousel.js",
+		"/Users/maartenbaijs/Library/Caches/Cleanup At Startup/Transmit/D4C2A3A2-DDF2-4B26-9C37-D6784AD1C35E/jquery.tinyscrollbar.js",
+		"/Users/maartenbaijs/NetBeansProjects/salesApp/HEADER",
+		"/Users/maartenbaijs/NetBeansProjects/salesApp/index.html",
+		"/Users/maartenbaijs/NetBeansProjects/salesApp/core/modals.js",
+		"/Users/maartenbaijs/NetBeansProjects/salesApp/local.manifest",
+		"/Users/maartenbaijs/NetBeansProjects/salesApp/dist/src/local.manifest"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"            ",
+			"design/",
+			"@@",
+			"true",
+			"move_var",
+			"move_var\n",
+			"move_var\nmove_var",
+			"move_var",
+			"iChildsLength",
+			"self.startInterval",
+			"parseInt",
+			"iCurrent",
+			"start",
+			"parse",
+			"scrollSim",
+			"xdm"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "projects/tinycircleslider/js/jquery.tinycircleslider.js",
+					"settings":
+					{
+						"buffer_size": 12313,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2286,
+								2286
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 2.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "projects/tinycircleslider/css/tinycircleslider.css",
+					"settings":
+					{
+						"buffer_size": 4613,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4505,
+								4505
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "projects/tinyscrollbar/css/tinyscrollbar.css",
+					"settings":
+					{
+						"buffer_size": 6854,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3304,
+								3304
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "projects/tinyscrollbar/js/jquery.tinyscrollbar.js",
+					"settings":
+					{
+						"buffer_size": 7813,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5664,
+								5664
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 804.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "projects/tinyscrollbar/index.html",
+					"settings":
+					{
+						"buffer_size": 44000,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1180,
+								1069
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "build.xml",
+					"settings":
+					{
+						"buffer_size": 6610,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5457,
+								5460
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1847.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "projects/tinyscrollbar/example/index.html",
+					"settings":
+					{
+						"buffer_size": 5209,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								511,
+								511
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 416.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 231.0,
+	"status_bar_visible": true
+}

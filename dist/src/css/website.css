@@ -1,0 +1,87 @@
+@font-face {
+      font-family: 'myriadpro';
+      src: url(../fonts/myriadpro.eot);
+      src: local('☺'),
+          url('../fonts/myriadpro.woff') format('woff'),
+          url('../fonts/myriadpro.ttf') format('truetype'),
+          url('../fonts/myriadpro.svg') format('svg');
+    }
+
+/* GLOBAL SECTION ================================================================================= */
+html, body { height: 100%; margin: 0; padding: 0;}
+body { background-color: #f3f3f3; font:12px 'arial'; color: #555555; }
+a { color: #C01313; }
+a:hover { }
+ul { margin: 0; padding: 0; }
+p { margin: 0 0 10px; line-height:160%; }
+img { border: 0; }
+
+.list { padding: 0 0 10px 35px; }
+.list li{ padding: 5px 0; }
+
+hr { border: 0; border-top:1px solid #C01313; margin:45px auto 20px; width:500px; }
+
+/* clears */
+.col-content:after
+{ clear:both; content:"."; display:block; font-size:0; height:0; line-height:0; overflow:hidden; }
+
+/* headings */
+h1 { font: 34px myriadpro; color: #c01313; margin: 0; padding: 0; }
+h2 { font: 18px myriadpro; color: #c01313; margin: 35px 0 10px; padding: 0; }
+h3 { font-size: 13px; clear: both; margin: 0; padding: 0; line-height:170%; }
+
+/* code */
+pre {  margin: 5px 0 35px; overflow: hidden; width: 922px; padding: 2px; border: 1px solid #ccc; position: relative; }
+code { padding: 5px 30px; display: block; background-color: #efefef; margin: 0;  overflow: auto;}
+
+/* ------------- WRAPPER SECTION -------------- */
+#wrapper { text-align: center; }
+#wrapper-inner { position: relative; width: 970px; text-align: left; margin: 0 auto;  }
+
+/* ------------- COLUMNS SECTION -------------- */
+#col-left { width: 250px; position: relative; float: left; }
+#col-main { display: block; overflow: hidden; }
+#col-right { width: 175px; position: relative; float: left; }
+
+.col-head, .col-foot, .col-head .end, .col-foot .end { background:url(../images/design/bg-col-block.png) no-repeat 0 0 transparent; }
+
+.col-head { background-position:0 0; height:5px; display: block; width: 970px;  }
+.col-head .end { background-position:100% 0; height:5px; margin:0 0 0 20px;}
+.col-foot { background-position:0 100%; height:25px; width: 970px; clear: both; display: block; overflow: hidden; }
+.col-foot .end { background-position:100% 100%; height:25px; margin:0 0 0 20px;}
+.col-content{ background-color: #fff; padding: 1px 20px 10px; border: 1px solid #d0d0d0; overflow: hidden; border-width: 0 1px; }
+
+/* ------------- HEADER SECTION -------------- */
+#header { height: 90px; display: block; padding: 10px 0 0 10px; position: relative; overflow: hidden; z-index: 100; }
+#header h1, header h1 { width: 500px; padding: 10px 0 0; }
+.slogan { width: 500px; padding: 5px 0 0 5px; display: block; }
+.crest { float: left; margin: 0 10px 0 0; }
+.block-download{ position: absolute; right: 20px; top: 25px; }
+.download { display: block; color: #fff; margin: 0 0 10px; text-decoration: none; font: 16px/38px myriadpro; text-align: center; background:url("../images/design/download.png") no-repeat scroll 0 0 transparent; width: 194px; height: 38px;}
+
+/* ------------- COLUMN MAIN BLOCKS -------------- */
+
+.block-menu { border-top:1px solid #C0C0C0; margin:35px 0 0 35px; width:295px; list-style: none; float: right; clear: right; }
+.block-menu li { display: inline; }
+.block-menu a {  border-bottom:1px solid #C0C0C0; padding: 0 0 0 5px; display: block; line-height: 35px; }
+.block-menu a:hover { background-color: #f1f1f1; }
+.googlead { width: 300px; margin: 15px 0 0 35px; float: right; clear: right;}
+.items { list-style: none; width: 500px; }
+.items li { overflow: hiddden; padding: 0 0 20px; }
+.items p { clear: both;  }
+.button {  white-space: nowrap; color: #c01313;  }
+.foot { font-size: 11px; }
+.beer { float: right }
+.googlead p { line-height: 200%; padding: 0 0 0 15px; }
+.addthis_toolbox { display:inline-block; }
+
+#twitter_div { margin-top: 0; }
+#twitter_div ul { margin: 0; padding: 0;  list-style: none; }
+#twitter_div li             { padding: 10px;  border-bottom:1px solid #C0C0C0;  }
+#twitter_div li:hover       { background-color: #f1f1f1; }
+#twitter_div span           { display: block; }
+#twitter_div span a         { font-size: 11px; font-weight: normal; margin: 3px 0; }
+.twitter-link a{ background:url(../images/design/twitter-bird.png) no-repeat 5px 50% transparent; border: 0; padding: 5px 0 0 45px;}
+
+/* ------------- FOOTER SECTION -------------- */
+.footer { padding:10px 0; display: block; text-align:center; }
