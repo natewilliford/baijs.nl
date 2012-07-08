@@ -1,10 +1,10 @@
-![Baijs!](https://github.com/wieringen/baijs.nl/blob/master/images/design/shield.png)
+![Baijs!](https://github.com/wieringen/baijs.nl/raw/master/images/design/shield.png)
 
 Built with Apache ANT
 
-# Dual licensed under the MIT or GPL Version 2 licenses. #
+# Copyright (c) 2010-2012 Baijs.nl #
 
-Copyright (c) 2010-2012 Baijs.nl
+Dual licensed under the MIT or GPL Version 2 licenses.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
