@@ -23,6 +23,8 @@
             ,   lockscroll : true   // return scrollwheel to browser if there is no more content.
             ,   size       : 'auto' // set the size of the scrollbar to auto or a fixed number.
             ,   sizethumb  : 'auto' // set the size of the thumb to auto or a fixed number.
+            ,   autohide   : false
+            ,   autohideTimeout : 1000
         }
     };
 
@@ -59,12 +61,14 @@
         ,   iPosition   = { start: 0, now: 0 }
         ,   iMouse      = {}
         ,   touchEvents = ( 'ontouchstart' in document.documentElement ) ? true : false
+        ,   autohideTimeoutId = null
         ;
 
         function initialize()
         {
             oSelf.update();
             setEvents();
+            setAutohideTimeout();
 
             return oSelf;
         }
@@ -131,6 +135,17 @@
             }
         }
 
+        function setAutohideTimeout ()
+        {
+            if (options.autohide) {
+                oScrollbar.obj.css('opacity', 1)
+                clearTimeout(autohideTimeoutId);
+                autohideTimeoutId = setTimeout(function() {
+                    oScrollbar.obj.fadeTo(null, 0);
+                }, options.autohideTimeout);
+            }
+        }
+
         function start( event )
         {
             var oThumbDir   = parseInt( oThumb.obj.css( sDirection ), 10 );
@@ -168,6 +183,8 @@
                 oThumb.obj.css( sDirection, iScroll / oScrollbar.ratio );
                 oContent.obj.css( sDirection, -iScroll );
 
+                setAutohideTimeout();
+
                 if( options.lockscroll || ( iScroll !== ( oContent[ options.axis ] - oViewport[ options.axis ] ) && iScroll !== 0 ) )
                 {
                     oEvent = $.event.fix( oEvent );
@@ -188,6 +205,8 @@
                 {
                     iPosition.now = Math.min( ( oTrack[ options.axis ] - oThumb[ options.axis ] ), Math.max( 0, ( iPosition.start + ( iMouse.start - ( sAxis ? event.pageX : event.pageY ) ))));
                 }
+
+                setAutohideTimeout();
 
                 iScroll = iPosition.now * oScrollbar.ratio;
                 oContent.obj.css( sDirection, -iScroll );
